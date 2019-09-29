@@ -33,7 +33,7 @@ namespace Flyff_Bot
 
             LoadPID();
             mem = BotMem.MemOpen(pid);
-            //Neuz = BotMem.ModuleGetBase(mem, "Neuz.exe");
+            Neuz = BotMem.ModuleGetBase(mem, "Neuz.exe");
             GameHD = BotControl.WinGetHandle("3F FLYFF Free");
             timer1.Start();
         }
